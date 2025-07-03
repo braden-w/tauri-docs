@@ -18,7 +18,7 @@ importers:
         version: 5.3.0
       '@astrojs/rss':
         specifier: ^4.0.7
-        version: 4.0.11
+        version: 4.0.12
       '@astrojs/starlight':
         specifier: 0.29.2
         version: 0.29.2(patch_hash=cce5b634885e07791c60f64102f8e7a74def815cdbc19d8aa069b9f4602f2890)(astro@4.16.18(@types/node@22.15.21)(rollup@2.79.1)(sass@1.89.0)(terser@5.31.0)(typescript@5.8.3))
@@ -138,7 +138,7 @@ importers:
         version: 0.26.11(typescript@5.8.3)
       typedoc-plugin-markdown:
         specifier: ^4.2.6
-        version: 4.2.10(typedoc@0.26.11(typescript@5.8.3))
+        version: 4.7.0(typedoc@0.26.11(typescript@5.8.3))
       typedoc-plugin-mdn-links:
         specifier: ^3.2.11
         version: 3.3.8(typedoc@0.26.11(typescript@5.8.3))
@@ -189,8 +189,8 @@ packages:
     resolution: {integrity: sha512-Z9IYjuXSArkAUx3N6xj6+Bnvx8OdUSHA8YoOgyepp3+zJmtVYJIl/I18GozdJVW1p5u/CNpl3Km7/gwTJK85cw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
 
-  '@astrojs/rss@4.0.11':
-    resolution: {integrity: sha512-3e3H8i6kc97KGnn9iaZBJpIkdoQi8MmR5zH5R+dWsfCM44lLTszOqy1OBfGGxDt56mpQkYVtZJWoxMyWuUZBfw==}
+  '@astrojs/rss@4.0.12':
+    resolution: {integrity: sha512-O5yyxHuDVb6DQ6VLOrbUVFSm+NpObulPxjs6XT9q3tC+RoKbN4HXMZLpv0LvXd1qdAjzVgJ1NFD+zKHJNDXikw==}
 
   '@astrojs/rss@4.0.5':
     resolution: {integrity: sha512-IyJVL6z09AQtxbgLaAwebT3T5YKe4oTHDesqydJv1KLHw+zEzzMCFuuNsEyxjiqu7df9+DDCpDXLj/WRiEUXvw==}
@@ -2217,8 +2217,12 @@ packages:
   fast-json-stable-stringify@2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
 
-  fast-xml-parser@4.5.1:
-    resolution: {integrity: sha512-y655CeyUQ+jj7KBbYMc4FG01V8ZQqjN+gDYGJ50RtfsUB8iG9AmwmwoAgeKLJdmueKKMrH1RJ7yXHTSoczdv5w==}
+  fast-xml-parser@4.5.3:
+    resolution: {integrity: sha512-RKihhV+SHsIUGXObeVy9AXiBbFwkVk7Syp8XgwN5U3JV416+Gwp/GO9i0JYKmikykgz/UHRrrV4ROuZEo/T0ig==}
+    hasBin: true
+
+  fast-xml-parser@5.2.5:
+    resolution: {integrity: sha512-pfX9uG9Ki0yekDHx2SiuRIyFdyAr1kMIMitPvb0YBo8SUfKvia7w7FIyd/l6av85pFYRhZscS75MwMnbvY+hcQ==}
     hasBin: true
 
   fastq@1.17.1:
@@ -3515,8 +3519,11 @@ packages:
     resolution: {integrity: sha512-ZprKx+bBLXv067WTCALv8SSz5l2+XhpYCsVtSqlMnkAXMWDq+/ekVbl1ghqP9rUHTzv6sm/DwCOiYutU/yp1fw==}
     engines: {node: '>=10'}
 
-  strnum@1.0.5:
-    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
+  strnum@1.1.2:
+    resolution: {integrity: sha512-vrN+B7DBIoTTZjnPNewwhx6cBA/H+IS7rfW68n7XxC1y7uoiGQBxaKzqucGUgavX15dJgiGztLJ8vxuEzwqBdA==}
+
+  strnum@2.1.1:
+    resolution: {integrity: sha512-7ZvoFTiCnGxBtDqJ//Cu6fWtZtc7Y3x+QOirG15wztbdngGSkht27o2pyGWrVy0b4WAy3jbKmnoK6g5VlVNUUw==}
 
   style-to-object@0.4.4:
     resolution: {integrity: sha512-HYNoHZa2GorYNyqiCaBgsxvcJIn7OHq6inEga+E6Ke3m5JkoqpQbnFssk4jwe+K7AhGa2fcha4wSOf1Kn01dMg==}
@@ -3627,11 +3634,11 @@ packages:
     resolution: {integrity: sha512-/OxDN6OtAk5KBpGb28T+HZc2M+ADtvRxXrKKbUwtsLgdoxgX13hyy7ek6bFRl5+aBs2yZzB0c4CnQfAtVypW/g==}
     engines: {node: '>= 0.4'}
 
-  typedoc-plugin-markdown@4.2.10:
-    resolution: {integrity: sha512-PLX3pc1/7z13UJm4TDE9vo9jWGcClFUErXXtd5LdnoLjV6mynPpqZLU992DwMGFSRqJFZeKbVyqlNNeNHnk2tQ==}
+  typedoc-plugin-markdown@4.7.0:
+    resolution: {integrity: sha512-PitbnAps2vpcqK2gargKoiFXLWFttvwUbyns/E6zGIFG5Gz8ZQJGttHnYR9csOlcSjB/uyjd8tnoayrtsXG17w==}
     engines: {node: '>= 18'}
     peerDependencies:
-      typedoc: 0.26.x
+      typedoc: 0.28.x
 
   typedoc-plugin-mdn-links@3.3.8:
     resolution: {integrity: sha512-Aewg+SW7hBdffRpT6WnpRwWthoaF9irlzXDKRyvcDVekPZSFujOlh690SV6eCgqrtP7GBJmN0TVeJUq6+6rb1w==}
@@ -4020,14 +4027,14 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/rss@4.0.11':
+  '@astrojs/rss@4.0.12':
     dependencies:
-      fast-xml-parser: 4.5.1
+      fast-xml-parser: 5.2.5
       kleur: 4.1.5
 
   '@astrojs/rss@4.0.5':
     dependencies:
-      fast-xml-parser: 4.5.1
+      fast-xml-parser: 4.5.3
       kleur: 4.1.5
 
   '@astrojs/sitemap@3.1.6':
@@ -6212,9 +6219,13 @@ snapshots:
 
   fast-json-stable-stringify@2.1.0: {}
 
-  fast-xml-parser@4.5.1:
+  fast-xml-parser@4.5.3:
     dependencies:
-      strnum: 1.0.5
+      strnum: 1.1.2
+
+  fast-xml-parser@5.2.5:
+    dependencies:
+      strnum: 2.1.1
 
   fastq@1.17.1:
     dependencies:
@@ -8126,7 +8137,9 @@ snapshots:
 
   strip-comments@2.0.1: {}
 
-  strnum@1.0.5: {}
+  strnum@1.1.2: {}
+
+  strnum@2.1.1: {}
 
   style-to-object@0.4.4:
     dependencies:
@@ -8240,7 +8253,7 @@ snapshots:
       is-typed-array: 1.1.13
       possible-typed-array-names: 1.0.0
 
-  typedoc-plugin-markdown@4.2.10(typedoc@0.26.11(typescript@5.8.3)):
+  typedoc-plugin-markdown@4.7.0(typedoc@0.26.11(typescript@5.8.3)):
     dependencies:
       typedoc: 0.26.11(typescript@5.8.3)
 
